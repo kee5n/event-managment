@@ -13,14 +13,14 @@ Event Management API on Node.js, TypeScripti ja Expressi abil loodav ürituste h
 Käivitamine
 Eeldused
 
-    Node.js
+* Node.js
 
-    npm
+* npm
 
 Paigaldamine
 
-npm install
+    npm install
 
 Serveri käivitamine
 
-npm run server
+    npm run server
