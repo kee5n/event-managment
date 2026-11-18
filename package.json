@@ -1,21 +1,23 @@
 {
-  "name": "event-managment",
-  "version": "1.0.0",
+  "name": "event-managment-api",
+  "version": "0.1.0",
   "description": "Ehitad selle rakenduse ise, samm-sammult.",
-  "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "server": "tsx --env-file=.env src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kee5n/event-managment.git"
   },
-  "keywords": [],
-  "author": "Kevin Laanekivi",
-  "license": "ISC",
   "type": "module",
   "bugs": {
     "url": "https://github.com/kee5n/event-managment/issues"
@@ -27,6 +29,8 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
+    "oxlint": "^1.94.0",
+    "prettier": "^3.10.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }

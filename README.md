@@ -13,9 +13,9 @@ Event Management API on Node.js, TypeScripti ja Expressi abil loodav ürituste h
 Käivitamine
 Eeldused
 
-* Node.js
+- Node.js
 
-* npm
+- npm
 
 Paigaldamine
 
@@ -24,3 +24,9 @@ Paigaldamine
 Serveri käivitamine
 
     npm run server
+
+Käivita ja paranda
+
+    npm run format
+    npm run lint
+    npm run typecheck
