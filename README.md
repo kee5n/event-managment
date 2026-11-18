@@ -30,3 +30,26 @@ Käivita ja paranda
     npm run format
     npm run lint
     npm run typecheck
+
+Haru nimed ja commit'ide kujud
+
+    Eesliide    Millal
+    feate:      uus võimalus
+    fix:        vea parandus
+    refactor:   koodi ümber korraldus ilma käituist muutmata
+    chore:      seadistus, paketid
+    docs:       README, dokumentatsioon
+    test:       testid
+
+ehita konteiner
+
+    docker compose up -d
+
+Võta konteiner maha
+
+    docker compose down
+
+kustuta konteiner
+
+    docker compose down -v
+
