@@ -3,7 +3,7 @@ import {env} from "./config/env.js"
 
 const server = app.listen(env.PORT, (error) => {
     if (error) throw error;
-    console.log(`Server running at http://localhost:${env.PORT}`);
+    //console.log(`Server running at http://localhost:${env.PORT}`);
 });
 
 let isShuttingDown = false;
