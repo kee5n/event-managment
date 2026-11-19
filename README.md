@@ -29,4 +29,4 @@ Käivita ja paranda
 
     npm run format
     npm run lint
-    npm run typecheck
+    npm run typecheckgi
