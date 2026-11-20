@@ -4,8 +4,6 @@ import { pool } from "./db/index.js";
 
 await pool.query("SELECT 1");
 
-await pool.end();
-
 const server = app.listen(env.PORT, (error) => {
     if (error) throw error;
     console.log(`Server running at http://localhost:${env.PORT}`);
