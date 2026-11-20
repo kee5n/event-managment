@@ -52,4 +52,3 @@ Võta konteiner maha
 kustuta konteiner
 
     docker compose down -v
-

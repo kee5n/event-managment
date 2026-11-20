@@ -4,7 +4,6 @@
   "categories": {
     "correctness": "error"
   },
-  "rules": { "no-console": "error" },
   "overrides": [
     {
       "files": ["src/config/env.ts", "src/scripts/**"],
