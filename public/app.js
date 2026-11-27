@@ -11,6 +11,11 @@ async function signIn(provider) {
 document.getElementById("google").onclick = () => signIn("google");
 document.getElementById("github").onclick = () => signIn("github");
 
-fetch("/api/auth/get-session")
-    .then((res) => res.json())
-    .then((data) => (document.getElementById("session").textContent = JSON.stringify(data, null, 2)));
+document.getElementById("logout").onclick = async () => {
+    await fetch("/api/auth/sign-out", {method: "POST"});
+    window.location.reload();
+};
+
+fetch("/api/me")
+    .then(async (res) => `${res.status}\n${JSON.stringify(await res.json(), null, 2)}`)
+    .then((text) => (document.getElementById("me").textContent = text));
