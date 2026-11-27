@@ -8,6 +8,13 @@
       "when": 1795156385065,
       "tag": "20261120063305_create_auth_tables",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795802230437,
+      "tag": "20261127175710_create_events_tabel",
+      "breakpoints": true
     }
   ]
 }
