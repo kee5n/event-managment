@@ -8,6 +8,11 @@ meRouter.get("/me", requireAuth, (req, res) => {
     res.json(toMeResponse(req.user!));
 });
 
-meRouter.get("/organizer-only", requireAuth, requireRole("organizer"), (req, res) => {
-    res.json({ok: true});
-});
+meRouter.get(
+    "/organizer-only",
+    requireAuth,
+    requireRole("organizer"),
+    (req, res) => {
+        res.json({ ok: true });
+    },
+);

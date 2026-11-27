@@ -1,13 +1,15 @@
 import type { RequestHandler } from "express";
 import { fromNodeHeaders } from "better-auth/node";
-import {auth} from "./auth.js";
+import { auth } from "./auth.js";
 import type { AuthUser } from "./express.js";
 
 export const requireAuth: RequestHandler = async (req, res, next) => {
-    const session = await auth.api.getSession({headers: fromNodeHeaders(req.headers)});
+    const session = await auth.api.getSession({
+        headers: fromNodeHeaders(req.headers),
+    });
 
     if (!session) {
-        res.status(401).json({error: "Pole sisse logitud"});
+        res.status(401).json({ error: "Pole sisse logitud" });
         return;
     }
 
@@ -25,5 +27,5 @@ export const requireRole =
             return;
         }
 
-        res.status(403).json({error: "Puudub õigus"});
+        res.status(403).json({ error: "Puudub õigus" });
     };
